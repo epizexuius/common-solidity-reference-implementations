@@ -1,13 +1,5 @@
-# Sample Hardhat Project
+# Sample Markle AirDrop/Distributor
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Users can claim a defined amount of tokens once. The merkle tree leaf nodes are hashes of the account address. And the merkle proof is computed for the particular account when checking for merkle proof.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+This project can be extended to include the amount of tokens to be dropped to a particular account as well. The leaf node for the merkle tree would then be the hash of the address and the amount and vis-a-vis for the merkle proof.
